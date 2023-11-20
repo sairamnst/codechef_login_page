@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  /*background: rgb(72,35,86);
+  background: linear-gradient(180deg, rgba(72,35,86,1) 25%, rgba(255,0,240,1) 42%, rgba(72,35,86,1) 75%);*/
+  /* background-image: -webkit-linear-gradient(150deg, #013A6B 50%, #004E95 50%); */
+  margin:0;
+  height:100vh;
+  background: 
+   linear-gradient(#FFFFFF,#FFFFFF,#FFFFFF) right/50% 100%,
+   linear-gradient(180deg, rgba(72,35,86,1) 25%, rgb(140, 44, 134) 42%, rgba(72,35,86,1) 75%) left/52% 100%; /*we can make this a little bigger to avoid the blank space*/
+  background-repeat:no-repeat;
+  flex-direction: row;
 }
 
 .App-logo {
@@ -14,11 +24,11 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  margin-left: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -35,4 +45,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.title {
+  color: rgba(218, 102, 214);
+}
+.box {
+  display: inline-flexbox;
+  width: 400px;
+  height: 480px;
+  background: #992e95;
+  border-radius: 25px;
+}
+
+.input{
+  border-radius: 50px;
+  height: 40px;
+  width: 330px;
+  background-color:#992e95;
+  border-color: white;
+}
+
+.button {
+  border-radius: 25px;
+  width: 100px;
+  height: 25px;
+  border-color: white;
+  height:40px;
+}
+
+.info {
+  color: #992e95;
 }
